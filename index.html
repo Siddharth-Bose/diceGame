@@ -1,31 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Dice Game</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Dice Game</title>
 </head>
-<body>
-    <div class="container" style="border: 2px solid red;">
-        <div class="row" style="text-align: center;">
-                    <h1>Dice Game</h1>
-        </div>
+
+<body style="background-color: grey;">
+
+  <div class="container">
+    <h1 class="text-center display-1" id="winner"
+      style="font-family:cursive;color:rgb(63, 206, 125); font-weight:bold; margin:5rem 0;">Dice Game</h1>
+    <div class="row text-center" style="margin-bottom:5rem;">
+      <div class="col-md-6">
+        <h2 class="display3" id="player1Label"
+          style="font-family:cursive; font-weight:bold;margin-bottom:5rem;color:rgb(63, 206, 125);">Player 1</h2>
+        <img src="../diceGame/imgs/dice6.png" id="player1Dice" alt="dice">
+      </div>
+      <div class="col-md-6">
+        <h2 class="display3" id="player2Label"
+          style="font-family:cursive; font-weight:bold; margin-bottom:5rem;color:rgb(63, 206, 125);">Player 2
+        </h2>
+        <img src="../diceGame/imgs/dice6.png" id="player2Dice" alt="dice">
+      </div>
     </div>
-    <div class="container" style="border: 3px solid green;">
-        <div class="row">    
-        <img src="imgs/1.png" alt="1" style="width:250px; height:250px; margin-left:250px;">
-    
-        <img src="imgs/2.png" alt="2" style="width:250px; height:250px; margin-left:250px;">
-    </div>
-    </div>
-    <div class="container" style="border: 3px solid green;">
     <div class="row">
-    <button type="submit" style="margin:0 auto; width: 20%;">Roll It!</button>
+      <button type="submit" onclick="diceGame()" class="text-center btn btn-lg"
+        style="background-color:rgb(63, 206, 125); color:#9c060c;width:30%;margin:3rem auto;font-family: cursive;font-weight:bold;">Roll
+        it!</button>
     </div>
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
